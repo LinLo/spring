@@ -43,6 +43,7 @@ if    (CUSTOM_COMPILER_DEFINITIONS)
 	add_definitions(${CUSTOM_COMPILER_DEFINITIONS})
 endif (CUSTOM_COMPILER_DEFINITIONS)
 
+set (CMAKE_CXX_FLAGS "--std=gnu++0x ${CMAKE_CXX_FLAGS}")
 
 ### set the default build type
 if    (NOT CMAKE_BUILD_TYPE)
